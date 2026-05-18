@@ -37,7 +37,7 @@ CSV outputs from the notebook and local scripts:
 
  - results_pareto.png — quality vs. memory Pareto frontier
  - results_sweep.png — sweep across cache sizes
- - hw1_per_op_profile.png — per-op timing profile
+ - per_op_profile.png — per-op timing profile
 
 # Requirements
 Colab path (analysis.ipynb)
