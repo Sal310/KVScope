@@ -1,0 +1,2 @@
+shape,unfused_kernels,fused_kernels,kernels_saved,unfused_bytes_MB,fused_bytes_MB,bw_reduction,launch_us_saved,theoretical_speedup,unfused_ms,fused_ms,actual_speedup,efficiency
+"B=1,H=32,N=1024,D=64",4,2,2,29.5,12.72,2.32,14.0,2.72,0.218,0.074,2.93,1.08

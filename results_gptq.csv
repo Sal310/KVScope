@@ -1,0 +1,3 @@
+gpu,model,policy,weight_GB_fp16,weight_GB_4bit,disk_GB_fp16,disk_GB_4bit,compression_raw,compression_disk,ppl_fp16,ppl_gptq,delta_ppl,tok_per_s_fp16,tok_per_s_gptq,note
+RTX A2000,SmolLM2-1.7B,GPTQ 4-bit weights,3.42,0.2,3.42,1.25,17.1,2.74,6.2,6.99,0.79,39.7,5.6,GPTQ throughput uses auto-gptq Python fallback on Windows; Linux+CUDA kernel typically faster than fp16
+RTX A2000,Qwen2-0.5B,GPTQ 4-bit weights,0.99,0.272,0.99,,3.63,,11.978,13.254,1.276,44.2,19.3,loaded from Qwen/Qwen2-0.5B-Instruct-GPTQ-Int4 (official)

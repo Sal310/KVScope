@@ -1,0 +1,9 @@
+model,arch,seq_len,category,policy,budget,cache_MB,ppl,ppl_full,ppl_ratio
+SmolLM2-1.7B,MHA G=1 (1.7B),512,quantization (cache),KIVI 8-bit (g=32),512,56.426496,4.628,4.628,1.0
+SmolLM2-1.7B,MHA G=1 (1.7B),1024,quantization (cache),KIVI 8-bit (g=32),1024,109.903872,4.089,4.093,0.999
+SmolLM2-1.7B,MHA G=1 (1.7B),2048,quantization (cache),KIVI 8-bit (g=32),2048,216.858624,7.713,7.713,1.0
+SmolLM2-1.7B,MHA G=1 (1.7B),4096,quantization (cache),KIVI 8-bit (g=32),4096,430.768128,12.159,12.159,1.0
+Qwen2-0.5B,GQA G=7 (0.5B),512,quantization (cache),KIVI 8-bit (g=32),512,3.526656,6.253,6.259,0.999
+Qwen2-0.5B,GQA G=7 (0.5B),1024,quantization (cache),KIVI 8-bit (g=32),1024,6.868992,7.462,7.476,0.998
+Qwen2-0.5B,GQA G=7 (0.5B),2048,quantization (cache),KIVI 8-bit (g=32),2048,13.553664,12.017,12.017,1.0
+Qwen2-0.5B,GQA G=7 (0.5B),4096,quantization (cache),KIVI 8-bit (g=32),4096,26.923008,22.103,22.103,1.0

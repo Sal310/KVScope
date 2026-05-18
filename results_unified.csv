@@ -1,0 +1,27 @@
+category,model,policy,cache_MB,compression,ppl,ratio_ppl
+baseline,SmolLM2-1.7B,baseline (full fp16),201.327,1.0,6.198,1.0
+eviction,SmolLM2-1.7B,sliding,50.332,4.0,354.637,57.218
+eviction,SmolLM2-1.7B,streaming,50.332,4.0,9.451,1.5248
+eviction,SmolLM2-1.7B,snapkv,50.332,4.0,8.308,1.3404
+"quantization (cache, KIVI)",SmolLM2-1.7B,KIVI 8-bit,109.904,1.83,6.198,1.0
+composition (KIVI + eviction),SmolLM2-1.7B,KIVI 8 + sliding,29.688,6.78,350.505,56.5513
+composition (KIVI + eviction),SmolLM2-1.7B,KIVI 8 + streaming,29.688,6.78,9.451,1.5248
+composition (KIVI + eviction),SmolLM2-1.7B,KIVI 8 + snapkv,29.688,6.78,8.308,1.3404
+"quantization (cache, KIVI)",SmolLM2-1.7B,KIVI 4-bit,58.098,3.47,6.259,1.0098
+composition (KIVI + eviction),SmolLM2-1.7B,KIVI 4 + sliding,17.99,11.19,356.025,57.4419
+composition (KIVI + eviction),SmolLM2-1.7B,KIVI 4 + streaming,17.99,11.19,9.488,1.5308
+composition (KIVI + eviction),SmolLM2-1.7B,KIVI 4 + snapkv,17.99,11.19,8.34,1.3456
+baseline,Qwen2-0.5B,baseline (full fp16),12.583,1.0,11.179,1.0
+eviction,Qwen2-0.5B,sliding,3.146,4.0,66.634,5.9606
+eviction,Qwen2-0.5B,streaming,3.146,4.0,17.281,1.5458
+eviction,Qwen2-0.5B,snapkv,3.146,4.0,14.985,1.3405
+"quantization (cache, KIVI)",Qwen2-0.5B,KIVI 8-bit,6.869,1.83,11.157,0.998
+composition (KIVI + eviction),Qwen2-0.5B,KIVI 8 + sliding,1.855,6.78,66.634,5.9606
+composition (KIVI + eviction),Qwen2-0.5B,KIVI 8 + streaming,1.855,6.78,17.281,1.5458
+composition (KIVI + eviction),Qwen2-0.5B,KIVI 8 + snapkv,1.855,6.78,14.985,1.3405
+"quantization (cache, KIVI)",Qwen2-0.5B,KIVI 4-bit,3.631,3.47,11.267,1.0079
+composition (KIVI + eviction),Qwen2-0.5B,KIVI 4 + sliding,1.124,11.19,69.56,6.2224
+composition (KIVI + eviction),Qwen2-0.5B,KIVI 4 + streaming,1.124,11.19,17.349,1.5519
+composition (KIVI + eviction),Qwen2-0.5B,KIVI 4 + snapkv,1.124,11.19,15.132,1.3536
+"quantization (weights, RTX A2000)",SmolLM2-1.7B,GPTQ 4-bit weights,,17.1,6.99,1.1274
+"quantization (weights, RTX A2000)",Qwen2-0.5B,GPTQ 4-bit weights,,3.63,13.254,1.1065

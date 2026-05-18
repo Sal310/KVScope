@@ -1,0 +1,3 @@
+model,architecture,L,H_q,H_kv,head_dim,per_tok_MHA_KB,per_tok_MQA_KB,per_tok_actual_KB,compression_vs_MHA
+SmolLM2-1.7B,MHA,24,32,32,64,192.0,6.0,192.0,1.0
+Qwen2-0.5B,GQA (G=7),24,14,2,64,84.0,6.0,12.0,7.0

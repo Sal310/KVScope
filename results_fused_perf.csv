@@ -1,0 +1,5 @@
+category,policy,seq_len,fp16_swa_ms,unfused_int8_ms,fused_int8_ms,int8_tax_vs_fp16,fusion_gain_vs_unfused_int8,kv_fp16_MB,kv_int8_MB,kv_compression
+fused,swa+dequant N=512,512,0.057,0.221,0.076,1.33,2.9,4.19,2.17,1.93
+fused,swa+dequant N=1024,1024,0.054,0.216,0.074,1.36,2.93,8.39,4.33,1.94
+fused,swa+dequant N=2048,2048,0.054,0.226,0.121,2.23,1.87,16.78,8.66,1.94
+fused,swa+dequant N=4096,4096,0.097,0.374,0.181,1.87,2.06,33.55,17.31,1.94

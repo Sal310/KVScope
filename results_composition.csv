@@ -1,0 +1,25 @@
+model,config,kivi_bits,eviction,ppl,cache_MB,compression,baseline_ppl,ratio_ppl,delta_ppl,predicted_ratio,compositionality
+SmolLM2-1.7B,baseline (full fp16),16,none,6.198,201.327,1.0,6.198,1.0,0.0,,
+SmolLM2-1.7B,sliding,16,sliding,354.637,50.332,4.0,6.198,57.218,348.439,,
+SmolLM2-1.7B,streaming,16,streaming,9.451,50.332,4.0,6.198,1.5248,3.253,,
+SmolLM2-1.7B,snapkv,16,snapkv,8.308,50.332,4.0,6.198,1.3404,2.11,,
+SmolLM2-1.7B,KIVI 8-bit,8,none,6.198,109.904,1.83,6.198,1.0,0.0,,
+SmolLM2-1.7B,KIVI 8 + sliding,8,sliding,350.505,29.688,6.78,6.198,56.5513,344.307,57.218,-0.6667
+SmolLM2-1.7B,KIVI 8 + streaming,8,streaming,9.451,29.688,6.78,6.198,1.5248,3.253,1.5248,0.0
+SmolLM2-1.7B,KIVI 8 + snapkv,8,snapkv,8.308,29.688,6.78,6.198,1.3404,2.11,1.3404,0.0
+SmolLM2-1.7B,KIVI 4-bit,4,none,6.259,58.098,3.47,6.198,1.0098,0.061,,
+SmolLM2-1.7B,KIVI 4 + sliding,4,sliding,356.025,17.99,11.19,6.198,57.4419,349.827,57.7787,-0.3368
+SmolLM2-1.7B,KIVI 4 + streaming,4,streaming,9.488,17.99,11.19,6.198,1.5308,3.29,1.5397,-0.0089
+SmolLM2-1.7B,KIVI 4 + snapkv,4,snapkv,8.34,17.99,11.19,6.198,1.3456,2.142,1.3535,-0.0079
+Qwen2-0.5B,baseline (full fp16),16,none,11.179,12.583,1.0,11.179,1.0,0.0,,
+Qwen2-0.5B,sliding,16,sliding,66.634,3.146,4.0,11.179,5.9606,55.455,,
+Qwen2-0.5B,streaming,16,streaming,17.281,3.146,4.0,11.179,1.5458,6.102,,
+Qwen2-0.5B,snapkv,16,snapkv,14.985,3.146,4.0,11.179,1.3405,3.806,,
+Qwen2-0.5B,KIVI 8-bit,8,none,11.157,6.869,1.83,11.179,0.998,-0.022,,
+Qwen2-0.5B,KIVI 8 + sliding,8,sliding,66.634,1.855,6.78,11.179,5.9606,55.455,5.9487,0.0119
+Qwen2-0.5B,KIVI 8 + streaming,8,streaming,17.281,1.855,6.78,11.179,1.5458,6.102,1.5427,0.0031
+Qwen2-0.5B,KIVI 8 + snapkv,8,snapkv,14.985,1.855,6.78,11.179,1.3405,3.806,1.3378,0.0027
+Qwen2-0.5B,KIVI 4-bit,4,none,11.267,3.631,3.47,11.179,1.0079,0.088,,
+Qwen2-0.5B,KIVI 4 + sliding,4,sliding,69.56,1.124,11.19,11.179,6.2224,58.381,6.0077,0.2147
+Qwen2-0.5B,KIVI 4 + streaming,4,streaming,17.349,1.124,11.19,11.179,1.5519,6.17,1.558,-0.0061
+Qwen2-0.5B,KIVI 4 + snapkv,4,snapkv,15.132,1.124,11.19,11.179,1.3536,3.953,1.3511,0.0025

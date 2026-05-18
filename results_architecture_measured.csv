@@ -1,0 +1,9 @@
+category,model,policy,H_kv,G,cache_MB,peak_GB,tok_per_s,ppl,ppl_readable,collapsed,delta_ppl
+architectural,SmolLM2-1.7B,SmolLM2-1.7B G=1 (original),32,1,213.91,7.83,30.99,6.198,6.198,False,0.0
+architectural,SmolLM2-1.7B,SmolLM2-1.7B G=2 (H_kv=16),16,2,106.955,8.2,29.94,56687.698,collapsed (>1e3),True,56681.5
+architectural,SmolLM2-1.7B,SmolLM2-1.7B G=4 (H_kv=8),8,4,53.477,8.061,29.74,3943187.641,collapsed (>1e3),True,3943181.443
+architectural,SmolLM2-1.7B,SmolLM2-1.7B G=8 (H_kv=4),4,8,26.739,7.967,30.11,23411782.986,collapsed (>1e3),True,23411776.788
+architectural,SmolLM2-1.7B,SmolLM2-1.7B G=16 (H_kv=2),2,16,13.369,7.929,29.99,7841965.01,collapsed (>1e3),True,7841958.812
+architectural,SmolLM2-1.7B,SmolLM2-1.7B G=32 (H_kv=1),1,32,6.685,7.9,28.05,6301195.908,collapsed (>1e3),True,6301189.71
+architectural,Qwen2-0.5B,Qwen2-0.5B G=7 (original),2,7,13.369,2.664,25.73,11.179,11.179,False,0.0
+architectural,Qwen2-0.5B,Qwen2-0.5B G=14 (H_kv=1),1,14,6.685,3.644,25.9,18988.0,collapsed (>1e3),True,18976.821

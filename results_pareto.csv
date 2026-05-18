@@ -1,0 +1,9 @@
+model,label,technique,compression,ratio_ppl,source,pareto
+Qwen2-0.5B,KIVI 8-bit,quantization,1.83,0.998,§5e,True
+Qwen2-0.5B,KIVI 4-bit,quantization,3.47,1.0079,§5e,True
+Qwen2-0.5B,KIVI 8 + snapkv,composition,6.78,1.3405,§5e,True
+Qwen2-0.5B,KIVI 4 + snapkv,composition,11.19,1.3536,§5e,True
+SmolLM2-1.7B,KIVI 8-bit,quantization,1.83,1.0,§5e,True
+SmolLM2-1.7B,KIVI 4-bit,quantization,3.47,1.0098,§5e,True
+SmolLM2-1.7B,KIVI 8 + snapkv,composition,6.78,1.3404,§5e,True
+SmolLM2-1.7B,KIVI 4 + snapkv,composition,11.19,1.3456,§5e,True

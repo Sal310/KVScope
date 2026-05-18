@@ -1,0 +1,23 @@
+model,policy,bits,ppl,delta_ppl,compression,group_size
+SmolLM2-1.7B,full fp16,16,6.198,0.0,1.0,
+SmolLM2-1.7B,KIVI 8-bit (no group),8,6.21,0.012,2.0,none
+SmolLM2-1.7B,KIVI 8-bit (g=32),8,6.198,0.0,2.0,32
+SmolLM2-1.7B,KIVI 4-bit (no group),4,6.814,0.616,4.0,none
+SmolLM2-1.7B,KIVI 4-bit (g=32),4,6.259,0.061,4.0,32
+SmolLM2-1.7B,KIVI 3-bit (no group),3,11.625,5.427,5.33,none
+SmolLM2-1.7B,KIVI 3-bit (g=32),3,6.37,0.172,5.33,32
+SmolLM2-1.7B,KIVI 2-bit (no group),2,10486.17,10479.972,8.0,none
+SmolLM2-1.7B,KIVI 2-bit (g=32),2,7.789,1.591,8.0,32
+SmolLM2-1.7B,"KIVI K=2,V=4 (no group)",3,38.49,32.292,5.33,none
+SmolLM2-1.7B,"KIVI K=2,V=4 (g=32)",3,7.141,0.943,5.33,32
+Qwen2-0.5B,full fp16,16,11.179,0.0,1.0,
+Qwen2-0.5B,KIVI 8-bit (no group),8,11.179,0.0,2.0,none
+Qwen2-0.5B,KIVI 8-bit (g=32),8,11.157,-0.022,2.0,32
+Qwen2-0.5B,KIVI 4-bit (no group),4,11.534,0.355,4.0,none
+Qwen2-0.5B,KIVI 4-bit (g=32),4,11.267,0.088,4.0,32
+Qwen2-0.5B,KIVI 3-bit (no group),3,13.751,2.571,5.33,none
+Qwen2-0.5B,KIVI 3-bit (g=32),3,11.557,0.377,5.33,32
+Qwen2-0.5B,KIVI 2-bit (no group),2,121.605,110.426,8.0,none
+Qwen2-0.5B,KIVI 2-bit (g=32),2,15.582,4.402,8.0,32
+Qwen2-0.5B,"KIVI K=2,V=4 (no group)",3,35.182,24.003,5.33,none
+Qwen2-0.5B,"KIVI K=2,V=4 (g=32)",3,13.644,2.464,5.33,32

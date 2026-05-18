@@ -1,0 +1,11 @@
+model,op,gpu_time_ms,calls,gpu_mem_MB
+SmolLM2-1.7B,aten::matmul,32.13,1744,24.519
+SmolLM2-1.7B,aten::linear,28.243,1352,11.01
+SmolLM2-1.7B,aten::mm,28.243,1352,11.01
+SmolLM2-1.7B,ampere_fp16_s16816gemm_fp16_128x64_ldg8_f2f_stages_64x4_tn,11.319,384,0.0
+SmolLM2-1.7B,Memcpy DtoH (Device -> Pinned),9.938,4590,0.0
+SmolLM2-1.7B,"std::enable_if<!(false), void>::type internal::gemvx::kernel",9.589,768,0.0
+SmolLM2-1.7B,aten::mul,6.721,1952,23.835
+SmolLM2-1.7B,aten::cat,5.864,776,1626.362
+SmolLM2-1.7B,"void gemv2T_kernel_val<int, int, __half, float, float, float",5.582,192,0.0
+SmolLM2-1.7B,aten::add,3.983,1368,16.138
