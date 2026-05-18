@@ -30,6 +30,7 @@ CSV outputs from the notebook and local scripts:
  - results_quality.csv, results_quant_quality.csv, results_quant_quality_L.csv : KV cache quantization quality
  - results_pareto.csv, results_unified.csv : aggregated trade-off tables
  - results_gptq.csv : GPTQ weight quantization results from the local GPU
+ - results_kernel_v1_vs_v2.csv : historical kernel comparison from earlier development (v2 has since been removed)
 
 
 # Plots:
