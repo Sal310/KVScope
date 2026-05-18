@@ -1,3 +1,0 @@
-policy,weights_GB,ppl,tok_per_sec
-fp16,2.2,6.734,53.2
-GPTQ,0.262,7.103,6.6
